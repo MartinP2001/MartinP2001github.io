@@ -30,15 +30,15 @@ for image in images_list :
 search_lien = re.compile('a href=".+(\.md)"')
 liens_list = re.finditer(search_lien,html)
 for lien in liens_list :   
-    lien_lien = lien.group()[8:-1]
+    lien_markdown = lien.group()[8:-1]
   
   
-    nom_lien = lien_lien.split("/")[-1]    
-    if("http://" not in lien_lien or "https://" not in lien_lien):
-        shutil.copy(lien_lien,os.path.join(folder_number,'link'))
-        print(lien_lien)
+    nom_lien = lien_markdown.split("/")[-1]    
+    if("http://" not in lien_markdown or "https://" not in lien_markdown):
+        shutil.copy(lien_markdown,os.path.join(folder_number,'link'))
+        print(lien_markdown)
         print(nom_lien)
-        html = html.replace(lien_lien,"./link/{}".format(nom_lien))
+        html = html.replace(lien_markdown,"./link/{}".format(nom_lien))
 
 
 with open("../template.html", "r" , encoding="utf-8") as template_file:
