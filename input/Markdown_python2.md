@@ -2,7 +2,7 @@
 
   Tous ca doit être convertie en HTML sur la base du langage python puis hebergé sur un hebergeur de site.
 
-  ![C'est le logo du CESI .Il est beau.](C:/Users/marti/Pictures/logo_CESI.jpg "le logo du cesi")
+  ![C'est le logo du CESI .Il est beau.](./pictures/logo_CESI.jpg "le logo du cesi")
 
   Ceci est [un lien externe vers vers google](https://www.google.com/)
-  ceci est [un lien interne vers lien.md](C:/Users/marti/Documents/cours_CESI/notes/lien.md)
+  ceci est [un lien interne vers lien.md](lien.html)
